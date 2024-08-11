@@ -8,12 +8,16 @@ import Resume from "./components/Resume";
 import Portfolio from "./components/portfolio";
 import Contact from "./components/Contact";
 import { useState } from "react";
+import SimpleForm from "./ChatbotPage/ChatbotTest/ChatbotTest";
+import { steps } from "./ChatbotPage/chatSteps";
 
 function App() {
   const [show, setShow] = useState(false);
   return (
     <>
-
+    <div>
+      <SimpleForm steps={steps}/>
+    </div>
       <Router>
         <Routes>
           <Route path={"/"} element={<HOME show={show} setShow={setShow} />} />
