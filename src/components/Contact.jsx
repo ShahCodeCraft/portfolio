@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import { useState } from "react";
+import { TbGridDots } from "react-icons/tb";
 import { Switch } from "@headlessui/react";
 
 function Contact({ show, setShow }) {
@@ -70,8 +71,10 @@ function Contact({ show, setShow }) {
   ];
 
   return (
-    <section className="page homePage">
+    <section className="page contactPage">
       <Navbar show={show} />
+  
+      <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
       <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
         <div
           aria-hidden="true"

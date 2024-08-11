@@ -123,6 +123,15 @@
   background-repeat: no-repeat;
   color: #fff;
 }
+
+.contactPage {
+  background: url(/portfolio-bg.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #0a0a0a;
+}
+
 .homePage .banner {
   padding-left: 9rem;
   line-height: 1;
