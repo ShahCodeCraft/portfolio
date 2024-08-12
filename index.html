@@ -118,7 +118,7 @@
     };
 
     // Send the data to the backend
-    fetch('http://localhost:3000/events/track', {
+    fetch(MONGO_URI, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
