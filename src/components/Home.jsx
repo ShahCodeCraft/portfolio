@@ -13,31 +13,31 @@ import { RiTwitterXLine } from "react-icons/ri";
 // Data configuration
 const socialLinks = [
   {
-    url: "https://www.instagram.com/z_4_zeeshuuu/",
+    url: "https://www.instagram.com/shahcodecraft?igsh=cXV2ZHV4Y3IyZXg4/",
     icon: <AiFillInstagram />,
+  },
+  {
+    url: "https://github.com/ShahCodeCraft",
+    icon: <FaGithubSquare />,
+  },
+  {
+    url: "https://x.com/shahcodecraft?t=9_brlXfJcZ_SH2d5k752CA&s=08",
+    icon: <RiTwitterXLine />,
+  },
+  {
+    url: "https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile",
+    icon: <AiFillLinkedin />,
   },
   {
     url: "https://www.facebook.com/people/Muhammad-Zeeshan-Khan/pfbid0r2fy5gefN1sTvwFSJYMBHkbij6eXHwzZMKDYemTYVu6Y7H2A4vsuDukaPaYRAjozl/",
     icon: <AiFillFacebook />,
   },
   {
-    url: "https://www.linkedin.com/in/muhammad-zeeshan-khan-dev/",
-    icon: <AiFillLinkedin />,
-  },
-  {
-    url: "https://github.com/Zeeshu911",
-    icon: <RiTwitterXLine />,
-  },
-  {
-    url: "https://github.com/Zeeshu911",
-    icon: <FaGithubSquare />,
-  },
-  {
-    url: "", // Add the correct URL
+    url: "https://chat.whatsapp.com/GO0A7wzl1iM3syWymxDCBN", // Add the correct URL
     icon: <FaWhatsapp />,
   },
   {
-    url: "https://www.youtube.com/@CodeWithZeeshu",
+    url: "https://www.youtube.com/@ShahCodeCraft",
     icon: <FaYoutube />,
   },
 ];
@@ -52,7 +52,7 @@ const Home = ({ show, setShow }) => {
         <h1>ALAM</h1>
         <p>Web Developer <pre>(MERN STACK)</pre></p>
         <div className="btns">
-          <Link to="./Shah-Fre-Res.pdf" target="_blank">
+          <Link to="./Shah-Exp-Res.pdf" target="_blank">
             Resume
           </Link>
           <Link to="/portfolio">Portfolio</Link>
@@ -68,7 +68,7 @@ const Home = ({ show, setShow }) => {
         </ul>
         <a
           className="download-btn"
-          href="./Shah-Fre-Res.pdf"
+          href="./Shah-Exp-Res.pdf"
           download="Shah-Resume.pdf"
         >
           [Download CV]

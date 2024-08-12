@@ -5,23 +5,18 @@ const Languages = () => {
   const languages = [
     {
       _id: "1",
-      title: "English",
-      progress: 75
-    },
-    {
-      _id: "2",
-      title: "Urdu",
-      progress: 95
-    },
-    {
-      _id: "3",
       title: "Hindi",
       progress: 80
     },
     {
-      _id: "4",
-      title: "Pashto",
-      progress: 100
+      _id: "2",
+      title: "English",
+      progress: 75
+    },
+    {
+      _id: "3",
+      title: "Urdu",
+      progress: 95
     },
   ]
   return (

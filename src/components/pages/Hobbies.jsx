@@ -1,8 +1,8 @@
 import React from "react";
 import { SiEpicgames } from "react-icons/si";
-import { AiFillCamera } from "react-icons/ai";
-import { BiSolidPlaneAlt } from "react-icons/bi";
-import { MdSportsBaseball } from "react-icons/md";
+import { AiFillBook, AiFillCamera } from "react-icons/ai";
+import { BiSolidBookAlt, BiSolidPlaneAlt } from "react-icons/bi";
+import { MdSportsBaseball, MdSportsCricket } from "react-icons/md";
 
 const Hobbies = () => {
   return <>
@@ -14,8 +14,12 @@ const Hobbies = () => {
           GAMING
         </div>
         <div>
-          <AiFillCamera/>
-          PHOTOGRAPHY
+          {/* <AiFillCamera/> */}
+          {/* PHOTOGRAPHY */}
+
+          <AiFillBook/>
+          READING BOOKS
+
         </div>
       </span>
       <span>
@@ -24,7 +28,8 @@ const Hobbies = () => {
           TRAVELLING
         </div>
         <div>
-          <MdSportsBaseball/>
+          {/* <MdSportsBaseball/> */}
+          <MdSportsCricket/>
           SPORTS
         </div>
       </span>

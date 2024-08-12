@@ -24,16 +24,16 @@ const Skills = () => {
       progress: 77,
     },
     {
-      title: "ShadCN",
-      progress: 83,
-    },
-    {
       title: "React.JS",
       progress: 83,
     },
     {
+      title: "Redux",
+      progress: 83,
+    },
+    {
       title: "Node.JS",
-      progress: 57,
+      progress: 75,
     },
     {
       title: "Express.JS",

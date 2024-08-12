@@ -4,19 +4,19 @@ const Experience = () => {
   const experiences = [
     {
       _id: "1",
-      title: "Sui Southern Gas Company",
-      from: "20-Aug-2023",
-      to: "20-Sep-2023",
+      title: "CodePrism Technologies",
+      from: "01-Jun-2023",
+      to: "01-Sep-2023",
       description:
-        "I completed a one-month internship at Sui Southern Gas Company, where I gained experience working in both the Web and Networking departments, enhancing my technical skills in these areas.",
+        "Internship Program as Front-end React developer • Developed and maintained responsive user interfaces (UI) by using React.js and JavaScript • Implemented and optimized frontend features, improving the overall user experience of web applications. • Designed and developed interactive UNSTOP Project : by using React.js ,Javascript and Material UI. Github Link : https://github.com/ShahCodeCraft/unstopclone.github.io",
     },
     {
-      _id: "2",
-      title: "Content Creator",
-      from: "11-Nov-2023",
-      to: "Present",
+      _id: "1",
+      title: "NareshIT Technology Hyderabad",
+      from: "01-Jan-2023",
+      to: "31-May-2023",
       description:
-        "I started a YouTube channel where I upload tutorials on MERN stack projects and other tech topics, providing educational content to help viewers enhance their programming skills.",
+        "Full-Stack Web Development with React & Angular Certification Completed a comprehensive 6-month UI Web Development program at Naresh IT Institute, Hyderabad, covering key technologies such as HTML, CSS,Javascript, ReactJS, AngularJS MongoDB, and Node.js.",
     },
   ];
 

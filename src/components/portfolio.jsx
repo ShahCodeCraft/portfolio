@@ -7,10 +7,10 @@ const Portfolio = ({ show, setShow }) => {
   const projects = [
     {
       _id: "1",
-      title: "Hospital Management System",
-      category: "MERN STACK",
+      title: "Ecommerce Website",
+      category: "MERN STACK (Shopping cart)",
       thumbnail: "/hms.png",
-      projectUrl: "/",
+      projectUrl: "http://ishop-blue.vercel.app",
     },
     {
       _id: "2",
@@ -30,8 +30,8 @@ const Portfolio = ({ show, setShow }) => {
       _id: "4",
       title: "Portfolio With Dashboard",
       category: "MERN STACK",
-      thumbnail: "/portfolio.png",
-      projectUrl: "/",
+      thumbnail: "/thumbnail.jpg",
+      projectUrl: "http://portfolio-rho-silk-77.vercel.app",
     },
     {
       _id: "5",

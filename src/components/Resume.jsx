@@ -30,7 +30,7 @@ const Resume = ({ show, setShow }) => {
             <div>
               <h3>WHAT CAN I DO</h3>
               <p>
-                Web Development - Frontend Development{" "}
+                Web Development - MERN Stack Development{" "}
                 <span>Website Optimization - Problem Solving</span>
                 <span>Code Debugging - Project Management</span>
               </p>

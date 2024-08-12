@@ -4,21 +4,21 @@ const Education = () => {
   const educations = [
     {
       _id: "1",
-      title: "Matriculation",
+      title: "Matriculation ( 2015 )",
       description:
-        "I completed my matriculation at my hometown school, building a strong academic foundation.",
+        "I completed my matriculation at my hometown, Ramjewar High School Aurai,Muzaffarpur(Bihar), building a strong academic foundation.",
     },
     {
       _id: "2",
-      title: "Intermediate",
+      title: "Intermediate ( 2017 )",
       description:
-        "I completed my intermediate education in the pre-engineering field, laying the groundwork for my engineering studies.",
+        "I completed my intermediate education in the pre-engineering field, laying the groundwork for my engineering studies. I completed my intermediate at my hometown, Vanijya Inter College Muzaffarpur Bihar "
     },
     {
       _id: "3",
       title: "Graduation",
       description:
-        "I graduated from Sindh Madressatul Islam University (SMIU) in 2024 with a degree in Software Engineering.",
+        "I have completed my graduation (B.Tech) from Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV),Bhopal in 2021 with a degree in Software Engineering (CSE).",
     },
   ];
 
