@@ -21,7 +21,7 @@
       // Function to fetch the IP address
       async function fetchIPAddress() {
           try {
-              const response = await fetch(MONGO_URI);
+              const response = await fetch(API_BASE_URI);
               const data = await response.json();
               return data.ip;
           } catch (error) {
@@ -118,7 +118,7 @@
     };
 
     // Send the data to the backend
-    fetch(MONGO_URI, {
+    fetch(API_BASE_URI, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
