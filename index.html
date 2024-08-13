@@ -21,7 +21,7 @@
       // Function to fetch the IP address
       async function fetchIPAddress() {
           try {
-              const response = await fetch(API_BASE_URI);
+              const response = await fetch(Fetch_IP_Address);
               const data = await response.json();
               return data.ip;
           } catch (error) {
