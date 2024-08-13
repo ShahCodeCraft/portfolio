@@ -192,11 +192,11 @@ function Contact({ show, setShow }) {
     const { id, value } = e.target;
     setFormData({ ...formData, [id]: value });
   };
-
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:3000/', {
+      const response = await fetch('http://localhost:3000/users/data', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -308,14 +308,17 @@ function Contact({ show, setShow }) {
                         id={id}
                         name={id}
                         rows={rows}
+                        value={formData[id]}  // Bind value to formData
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         onChange={handleChange}
+                
                       />
                     ) : (
                       <input
                         id={id}
                         name={id}
                         type={type}
+                        value={formData[id]}  // Bind value to formData
                         autoComplete={autoComplete}
                         className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
                         onChange={handleChange}
@@ -325,7 +328,7 @@ function Contact({ show, setShow }) {
                 </div>
               </div>
             ))}
-            <div className="flex gap-x-4 sm:col-span-2">
+            {/* <div className="flex gap-x-4 sm:col-span-2">
               <div className="flex h-6 items-center">
                 <Switch
                   checked={agreed}
@@ -350,14 +353,14 @@ function Contact({ show, setShow }) {
                 </a>
                 .
               </label>
-            </div>
+            </div> */}
           </div>
           <div className="mt-10">
             <button
               type="submit"
               className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
             >
-              Let's talk
+              Submit
             </button>
           </div>
         </form>

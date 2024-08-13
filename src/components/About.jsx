@@ -32,9 +32,7 @@ const About = ({ show, setShow }) => {
               </span> */}
               I am Shahnawaz Alam. I have completed B.Tech in Computer Science
               and Engineering from IES Institute of Technology, Bhopal.{" "}
-              <spam>
-                {" "}
-                <br />
+              <p>
                 Recently, I completed a 6-month internship where I specialized
                 in UI Full Stack Web Development (MERN Stack). My expertise
                 spans across HTML, CSS, Tailwind CSS, JavaScript, React.js,
@@ -44,7 +42,7 @@ const About = ({ show, setShow }) => {
                 includes working on various projects, where I applied my
                 technical skills to create dynamic and responsive web
                 applications.
-              </spam>
+              </p>
             </div>
             <div>
               <p>Muzaffarpur, Bihar (INDIA)</p>
@@ -53,7 +51,6 @@ const About = ({ show, setShow }) => {
           </div>
           <div className="profileImage">
             <img src="/shah_pic.png" alt="profilImage" />
-            <span></span>
           </div>
         </div>
       </section>

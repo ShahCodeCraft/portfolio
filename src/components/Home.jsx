@@ -50,7 +50,7 @@ const Home = ({ show, setShow }) => {
       <div className="banner">
         <h1>SHAHNAWAZ</h1>
         <h1>ALAM</h1>
-        <p>Web Developer <pre>(MERN STACK)</pre></p>
+        <p>Web Developer <br/>(MERN STACK)</p>
         <div className="btns">
           <Link to="./Shah-Exp-Res.pdf" target="_blank">
             Resume
