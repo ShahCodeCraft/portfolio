@@ -111,7 +111,7 @@ const CustomReCaptcha = ({ onVerify }) => {
               isRotating ? 'animate-spin' : ''
             }`}
           >
-            <img src='./public/refresh.png'/> 
+            <img src='/refresh.png' alt='Refresh Captcha' /> 
           </button>
         </div>
       </div>
