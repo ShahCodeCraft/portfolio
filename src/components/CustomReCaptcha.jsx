@@ -101,7 +101,7 @@ const CustomReCaptcha = ({ onVerify }) => {
           ref={captchaCanvas}
           width="150"
           height="50"
-          className="bg-gray-100 px-3 border rounded"
+          className="bg-gray-100 border px-4 rounded"
         />
         <div className='bg-blue-300 p-1 rounded-full hover:bg-blue-400 ml-2'>
           <button
