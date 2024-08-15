@@ -5,6 +5,12 @@ import { TbGridDots } from "react-icons/tb";
 import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 import CustomReCaptcha from './CustomReCaptcha';
+import { FitScreen } from "@mui/icons-material";
+
+const LineGradient = ({ width = "w-full" }) => {
+  return <div className={`h-0.5 ${width} bg-gradient-to-r from-blue-400 to-blue-600`} />;
+};
+
 
 function Contact({ show, setShow }) {
   const [agreed, setAgreed] = useState(false);
@@ -54,8 +60,8 @@ function Contact({ show, setShow }) {
     <section className="page contactPage">
       <Navbar show={show} />
       <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
-      <div className="relative isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
-        <div
+      <div className="relative isolate bg-[#2D384A] sm:px-6 lg:py-10 sm:py-10 lg:px-8">
+        {/* <div
           aria-hidden="true"
           className="absolute inset-x-0 top-[-10rem] -z-10 overflow-hidden blur-3xl sm:top-[-20rem]"
         >
@@ -66,15 +72,42 @@ function Contact({ show, setShow }) {
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
             }}
           />
-        </div>
-        <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-            CONTACT US
-          </h2>
-          <p className="mt-2 text-lg leading-8 text-gray-600">
+          </div>
+        </div> */}
+
+
+        <div className="sm:flex justify-center md:justify-end w-full sm:p-3 lg:p-5">
+        <div>
+          <p className="font-playfair font-semibold text-4xl ">
+            <span className="text-yellow-500">CONTACT ME</span><span className="text-gray-100">&nbsp;  TO GET STARTED</span>
+          </p>
+      
+          <div className="flex justify-end my-5">
+            <LineGradient width="w-1/2" />
+          </div>
+          <p className="mt-2 text-lg leading-8 text-gray-200">
             Aute magna irure deserunt veniam aliqua magna enim voluptate.
           </p>
         </div>
+      </div>
+
+
+      <div className="md:flex md:justify-between gap-10">
+        <div className="basis-1/2 flex justify-center items-center h-full mt-[-45px]">
+          {/* <img src="./bg-contact.jpg" alt="Not Found" className="object-cover rounded-lg" /> */}
+          <img
+    src="./bg-contact.jpg"
+    alt="Not Found"
+    className="object-cover rounded-lg lg:hidden"
+  />
+  <img
+    src="./bg-contact3.jpg"
+    alt="Not Found"
+    className="object-cover rounded-lg hidden lg:block h-full w-full max-h-full mt-[-100px]"
+  />
+      </div>
+
+      <div className="basis-1/2">
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}
@@ -82,9 +115,9 @@ function Contact({ show, setShow }) {
         >
           {({ values, handleChange, handleSubmit, errors, touched }) => (
             <Form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
-              <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2 ">
                 <div className="sm:col-span-1">
-                  <label htmlFor="firstName" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label htmlFor="firstName" className="text-gray-100 block text-sm font-semibold leading-6">
                     First name
                   </label>
                   <div className="mt-2.5">
@@ -92,6 +125,7 @@ function Contact({ show, setShow }) {
                       id="firstName"
                       name="firstName"
                       type="text"
+                      placeholder="Enter First Name"
                       value={values.firstName}
                       onChange={handleChange}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -103,7 +137,7 @@ function Contact({ show, setShow }) {
                 </div>
                 
                 <div className="sm:col-span-1">
-                  <label htmlFor="lastName" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label htmlFor="lastName" className="block text-sm font-semibold leading-6 text-gray-100">
                     Last name
                   </label>
                   <div className="mt-2.5">
@@ -111,6 +145,7 @@ function Contact({ show, setShow }) {
                       id="lastName"
                       name="lastName"
                       type="text"
+                      placeholder="Enter Last Name"
                       value={values.lastName}
                       onChange={handleChange}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -122,7 +157,7 @@ function Contact({ show, setShow }) {
                 </div>
                 
                 <div className="sm:col-span-2">
-                  <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label htmlFor="company" className="block text-sm font-semibold leading-6 text-gray-100">
                     Company
                   </label>
                   <div className="mt-2.5">
@@ -130,9 +165,10 @@ function Contact({ show, setShow }) {
                       id="company"
                       name="company"
                       type="text"
+                      placeholder="Enter Company name"
                       value={values.company}
                       onChange={handleChange}
-                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                      className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 "
                     />
                     {touched.company && errors.company ? (
                       <div className="text-red-600 text-sm">{errors.company}</div>
@@ -141,7 +177,7 @@ function Contact({ show, setShow }) {
                 </div>
                 
                 <div className="sm:col-span-2">
-                  <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-100">
                     Email
                   </label>
                   <div className="mt-2.5">
@@ -149,6 +185,7 @@ function Contact({ show, setShow }) {
                       id="email"
                       name="email"
                       type="email"
+                      placeholder="Enter Email / Gmail"
                       value={values.email}
                       onChange={handleChange}
                       className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -161,8 +198,8 @@ function Contact({ show, setShow }) {
                 
 
 
-              <div className="sm:col-span-2">
-                  <label htmlFor="phoneNumber" className="block text-sm font-semibold leading-6 text-gray-900">
+                <div className="sm:col-span-2">
+                  <label htmlFor="phoneNumber" className="block text-sm font-semibold leading-6 text-gray-100">
                     Phone Number
                   </label>
                   <div className="relative mt-2.5">
@@ -187,6 +224,7 @@ function Contact({ show, setShow }) {
                       id="phoneNumber"
                       name="phoneNumber"
                       type="tel"
+                      placeholder="Enter Phone Number"
                       value={values.phoneNumber}
                       onChange={handleChange}
                       className="block w-full rounded-md border-0 px-3.5 py-2 pl-28 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
@@ -202,7 +240,7 @@ function Contact({ show, setShow }) {
 
                 
                 <div className="sm:col-span-2">
-                  <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                  <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-100">
                     Message
                   </label>
                   <div className="mt-2.5">
@@ -210,6 +248,7 @@ function Contact({ show, setShow }) {
                       id="message"
                       name="message"
                       as="textarea"
+                      placeholder="Enter you queries..."
                       rows="4"
                       value={values.message}
                       onChange={handleChange}
@@ -247,6 +286,10 @@ function Contact({ show, setShow }) {
             </Form>
           )}
         </Formik>
+
+        </div>
+      </div>  
+    
       </div>
     </section>
   );
