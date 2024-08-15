@@ -8,6 +8,7 @@ const CustomReCaptcha = ({ onVerify }) => {
   const captchaCanvas = useRef(null);
   const [isRotating, setIsRotating] = useState(false);
 
+
   // Function to generate random code
   const generateCaptcha = () => {
     const randomCode = Math.random().toString(36).substring(2, 8).toUpperCase();
@@ -76,9 +77,13 @@ const CustomReCaptcha = ({ onVerify }) => {
     if (isValid) {
       setMessage('Captcha verified successfully!');
     } else {
+      setTimeout(()=>{
+        generateCaptcha();
+        setMessage(false)
+      },4000)
       setMessage('You entered the wrong captcha. Please try again.');
       setUserInput('');
-      generateCaptcha();
+   
     }
   };
 
@@ -116,7 +121,7 @@ const CustomReCaptcha = ({ onVerify }) => {
         </div>
       </div>
 
-      <div className="flex items-center">
+      <div className="md:flex sm:block sm:items-center">
         <input
           type="text"
           value={userInput}
@@ -127,7 +132,7 @@ const CustomReCaptcha = ({ onVerify }) => {
         <button
           type='button'
           onClick={verifyCaptcha}
-          className="ml-4 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+          className="w-full md:w-auto ml-0 md:ml-4 mt-4 md:mt-0 rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
           Verify
         </button>

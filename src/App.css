@@ -306,7 +306,7 @@
 }
 
 .aboutPage {
-  background: #0f0f0f;
+  background: #000000;
   justify-content: flex-start;
   color: #fff;
   min-height: 100vh;
@@ -334,11 +334,11 @@
 .aboutPage .banner .content {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  padding-left: 9rem;
+  width: 80%;
+  padding-left: 5rem;
   text-align: justify;
   justify-content: space-evenly;
-  padding-right: 1rem;
+  padding-right: 5rem;
 }
 .aboutPage .banner .content div:nth-of-type(1) h3 {
   font-size: 1.4rem;
@@ -420,9 +420,9 @@
     height: fit-content;
   }
   .aboutPage .banner .profileImage{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
-    height: 600px;
+    /* height: 600px; */
   }
 }
 

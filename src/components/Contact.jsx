@@ -61,34 +61,22 @@ function Contact({ show, setShow }) {
       <Navbar show={show} />
       <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
       <div className="relative isolate bg-[#2D384A] sm:px-6 lg:py-10 sm:py-10 lg:px-8">
-        {/* <div
-          aria-hidden="true"
-          className="absolute inset-x-0 top-[-10rem] -z-10 overflow-hidden blur-3xl sm:top-[-20rem]"
-        >
-          <div
-            className="relative left-1/2 -z-10 aspect-[1155/678] w-[36.125rem] max-w-none -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-pink-300 to-indigo-300 opacity-30 sm:left-[calc(50%-40rem)] sm:w-[72.1875rem]"
-            style={{
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-          </div>
-        </div> */}
-
-        <div>
+      <div>
         <img
               src="./bg-contact.jpg"
               alt="Not Found"
               className="object-cover rounded-lg lg:hidden"
             />
         </div>
-        <div className="sm:flex justify-center md:justify-end w-full sm:p-3 lg:p-5">
-        <div>
-          <p className="font-playfair font-semibold text-4xl ">
+
+
+      <div className="sm:flex justify-center md:justify-end w-full sm:p-3 lg:p-5 py-5">
+        <div className="px-3 lg:px-2">
+          <p className="font-playfair font-semibold text-4xl   ">
             <span className="text-yellow-500">CONTACT ME</span><span className="text-gray-100">&nbsp;  TO GET STARTED</span>
           </p>
       
-          <div className="flex justify-end my-5">
+          <div className="flex sm:justify-end my-5">
             <LineGradient width="w-1/2" />
           </div>
           <p className="mt-2 text-lg leading-8 text-gray-200">
@@ -99,7 +87,7 @@ function Contact({ show, setShow }) {
 
 
       <div className="md:flex md:justify-between gap-10">
-        <div className="basis-1/2 flex justify-center items-center h-full mt-[-45px]">
+        <div className="basis-1/2 flex justify-center items-center h-full mt-[-40px]">
           {/* <img src="./bg-contact.jpg" alt="Not Found" className="object-cover rounded-lg" /> */}
          
               <img
@@ -109,7 +97,7 @@ function Contact({ show, setShow }) {
               />
       </div>
 
-      <div className="basis-1/2">
+      <div className="basis-1/2 px-3 lg:px-2">
         <Formik
           initialValues={initialValues}
           validationSchema={validationSchema}

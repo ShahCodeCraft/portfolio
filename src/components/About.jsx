@@ -9,27 +9,14 @@ const About = ({ show, setShow }) => {
         <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
 
         <div className="banner">
-          <div className="content">
+          <div className="content ">
+          <img src="https://www.ie.edu/insights/wp-content/uploads/2021/07/shutterstock_1913016523.jpg" alt='error' className="object-contain lg:hidden" />
             <div>
               <h1>ABOUT</h1>
               <h3>ershahalam12@gmail.com</h3>
               <br />
             </div>
             <div>
-              {/* Hello, I'm Muhammad Zeeshan Khan, a frontend developer with a
-              versatile skill set that bridges the gap between captivating user
-              interfaces and robust backend functionality. I specialize in
-              crafting visually appealing and user-friendly websites using HTML,
-              CSS, and JavaScript. Beyond the frontend, I also possess valuable
-              insights into backend technologies, allowing me to create
-              seamless, end-to-end web solutions.{" "}
-              <span>
-                {" "}
-                My passion lies in creating interactive, responsive designs
-                while ensuring efficient data handling and server-side
-                processes. Let's collaborate to bring your web project to life,
-                marrying design elegance with technical excellence!{" "}
-              </span> */}
               I am Shahnawaz Alam. I have completed B.Tech in Computer Science
               and Engineering from IES Institute of Technology, Bhopal.{" "}
               <p>
@@ -42,15 +29,20 @@ const About = ({ show, setShow }) => {
                 includes working on various projects, where I applied my
                 technical skills to create dynamic and responsive web
                 applications.
+<br/><br/>
+<blockquote>At CodePrism Technologies apointed as a Intern
+Front-end React developer<br/>
+• Developed and maintained responsive user interfaces (UI) by using React.js and JavaScript<br/>
+• Implemented and optimized frontend features, improving the overall user experience of web applications.<br/>
+• Designed and developed interactive "UNSTOP Project" by using React.js ,Javascript and Material UI</blockquote>
               </p>
             </div>
             <div>
               <p>Muzaffarpur, Bihar (INDIA)</p>
-              {/* <p>Near Gulshan-e-Maymar</p> */}
             </div>
           </div>
           <div className="profileImage">
-            <img src="/shah_pic.png" alt="profilImage" />
+            <img src="/shah_pic.png" alt="profilImage" className="object-cover hidden lg:block" />
           </div>
         </div>
       </section>
