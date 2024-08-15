@@ -75,7 +75,13 @@ function Contact({ show, setShow }) {
           </div>
         </div> */}
 
-
+        <div>
+        <img
+              src="./bg-contact.jpg"
+              alt="Not Found"
+              className="object-cover rounded-lg lg:hidden"
+            />
+        </div>
         <div className="sm:flex justify-center md:justify-end w-full sm:p-3 lg:p-5">
         <div>
           <p className="font-playfair font-semibold text-4xl ">
@@ -95,16 +101,12 @@ function Contact({ show, setShow }) {
       <div className="md:flex md:justify-between gap-10">
         <div className="basis-1/2 flex justify-center items-center h-full mt-[-45px]">
           {/* <img src="./bg-contact.jpg" alt="Not Found" className="object-cover rounded-lg" /> */}
-          <img
-    src="./bg-contact.jpg"
-    alt="Not Found"
-    className="object-cover rounded-lg lg:hidden"
-  />
-  <img
-    src="./bg-contact3.jpg"
-    alt="Not Found"
-    className="object-cover rounded-lg hidden lg:block h-full w-full max-h-full mt-[-100px]"
-  />
+         
+              <img
+                src="./bg-contact3.jpg"
+                alt="Not Found"
+                className="object-cover rounded-lg hidden lg:block h-full w-full max-h-full mt-[-100px]"
+              />
       </div>
 
       <div className="basis-1/2">
