@@ -29,7 +29,7 @@ const socialLinks = [
     icon: <AiFillLinkedin />,
   },
   {
-    url: "https://www.facebook.com/people/Muhammad-Zeeshan-Khan/pfbid0r2fy5gefN1sTvwFSJYMBHkbij6eXHwzZMKDYemTYVu6Y7H2A4vsuDukaPaYRAjozl/",
+    url: "https://www.facebook.com",
     icon: <AiFillFacebook />,
   },
   {
