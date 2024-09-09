@@ -165,7 +165,7 @@ const SimpleForm = ({steps}) => {
         </Box>
         <img src="./shah_pic.png" className={styles.logo} alt="cp_logo" />
         <Typography variant="body1">
-          Welcome to CodePrism Technologies
+          Welcome! know more about me and my work
         </Typography>
       </Box>
     );
