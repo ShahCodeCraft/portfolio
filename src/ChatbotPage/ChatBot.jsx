@@ -97,7 +97,8 @@ function ChatBot() {
         {/*  */}
         <img src="./logo_cp.png" className={styles.logo} alt="cp_logo" />
         <Typography variant="body1">
-          Welcome! know more about me and my work
+          Welcome...! know more<br/>
+          about me and my work
         </Typography>
       </Box>
     );
