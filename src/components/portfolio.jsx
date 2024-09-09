@@ -7,17 +7,17 @@ const Portfolio = ({ show, setShow }) => {
   const projects = [
     {
       _id: "1",
-      title: "Ecommerce Website",
+      title: "Portfolio With Dashboard",
       category: "MERN STACK (Shopping cart)",
-      thumbnail: "/hms.png",
-      projectUrl: "http://ishop-blue.vercel.app",
+      thumbnail: "/thumbnail.jpg",
+      projectUrl: "http://portfolio-rho-silk-77.vercel.app",
     },
     {
       _id: "2",
-      title: "Job Seeking Application",
+      title: "Chat-App",
       category: "MERN STACK",
       thumbnail: "/job.png",
-      projectUrl: "/",
+      projectUrl: "https://frontend-chat-app-omega.vercel.app",
     },
     {
       _id: "3",
@@ -28,10 +28,10 @@ const Portfolio = ({ show, setShow }) => {
     },
     {
       _id: "4",
-      title: "Portfolio With Dashboard",
+      title: "Ecommerce Website MERN",
       category: "MERN STACK",
-      thumbnail: "/thumbnail.jpg",
-      projectUrl: "http://portfolio-rho-silk-77.vercel.app",
+      thumbnail: "/hms.png ",
+      projectUrl: "https://fullstack-ecommerce-website-shah.vercel.app",
     },
     {
       _id: "5",
