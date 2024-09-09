@@ -292,13 +292,13 @@ export const steps = [
   {
     id: "nareshit",
     message:
-      "Mobile: +91 8919366435, Email: anupam.gupta@codeprism.in, Address: 3rd floor, Jubilee Square building, Jubilee Hills, Rd No 36, Hyderabad, Website: codeprism.in",
+      "Completed a 9-month internship at Naresh iT Institute, where I gained in-depth knowledge of HTML, CSS, JavaScript, React.js, MongoDB, Express.js, and Node.js. During this time, I successfully developed projects including a Todo-app, an E-commerce website, a Chat-app, and a polished personal portfolio.",
     trigger: "end",
   },
   {
     id: "codeprism",
     message:
-      "Mobile: +1 307 275 9436, Email: anupam.gupta@codeprism.in, Address: 1309, Coffeen Avenue STE 1200 Sheridan, Wyoming 82801, Website: codeprismtechnologies.com",
+      "Completed a 3+ month internship at CodePrism, where I contributed to real-time projects, including the Unstop Learning App. This experience allowed me to deepen my skills in web development while working on live projects, gaining valuable hands-on experience in a professional environment.",
     trigger: "end",
   },
 
