@@ -1,70 +1,29 @@
 import React from "react";
-import { FaRegDotCircle } from "react-icons/fa";
+import skills from "../data/skills.json";
 
 const Skills = () => {
-  const skills = [
-    {
-      title: "HTML",
-      progress: 90,
-    },
-    {
-      title: "CSS",
-      progress: 85,
-    },
-    {
-      title: "JavaScript",
-      progress: 75,
-    },
-    {
-      title: "BootStrap",
-      progress: 77,
-    },
-    {
-      title: "Tailwind CSS",
-      progress: 77,
-    },
-    {
-      title: "React.JS",
-      progress: 83,
-    },
-    {
-      title: "Redux",
-      progress: 83,
-    },
-    {
-      title: "Node.JS",
-      progress: 75,
-    },
-    {
-      title: "Express.JS",
-      progress: 71,
-    },
-    {
-      title: "MongoDB",
-      progress: 73,
-    },
-  ];
 
   return (
     <>
-      <div>
-        <h3>DEVELOPMENT SKILLS</h3>
-        {skills.map((element) => {
-          return (
-            <div key={element.title} className="progressBar">
-              <p>{element.title}</p>
-              <span>
-                <FaRegDotCircle
-                  style={{
-                    right: `${
-                      element.progress > 85 ? 0 : 100 - element.progress
-                    }`,
-                  }}
-                />
-              </span>
+      <div className="container text-gray-800 mx-auto px-4 py-12" id="skills">
+        <h1 className="text-4xl font-bold text-center mb-8 text-gray-50">SKILLS</h1>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {skills.map((data, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center bg-white shadow-lg p-6 rounded-lg transform transition duration-1000 hover:scale-105"
+              data-aos="flip-left"
+              data-aos-duration="1000"
+            >
+             <img
+                src={data.imageSrc}
+                alt={data.title}
+                className="w-16 h-16 object-contain mb-4"
+              />
+              <h3 className="text-xl font-semibold">{data.title}</h3>
             </div>
-          );
-        })}
+          ))}
+        </div>
       </div>
     </>
   );

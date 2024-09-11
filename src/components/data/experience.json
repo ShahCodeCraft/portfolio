@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "role": "Naresh-iT Technology",
+    "organisation": "Google",
+    "startDate": "Sept, 2023",
+    "endDate": "Present",
+    "location": "CA,United State",
+    "experiences": [
+      "Worked on Google Gmail",
+      "Worked with the Google Bard Team"
+    ],
+    "imageSrc": "https://pbs.twimg.com/profile_images/1523555503812771841/msFf7rze_400x400.jpg"
+  },
+  {
+    "id": 2,
+    "role": "CodePrism Technologies",
+    "organisation": "Mirosoft",
+    "startDate": "Aug, 2022",
+    "endDate": "Aug, 2023",
+    "location": "London, UK",
+    "experiences": [
+      "Worked on Windows 10 terminal",
+      "Worked on Window 11 Upcoming"
+    ],
+    "imageSrc": "https://cdn.embed.ly/providers/logos/codeprism.png"
+  }
+]

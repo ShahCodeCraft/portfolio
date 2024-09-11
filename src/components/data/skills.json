@@ -1,0 +1,8 @@
+[
+  { "title": "MongoDB", "imageSrc": "../../src/images/mongodb.png" },
+  { "title": "React", "imageSrc": "../../src/images/react.png" },
+  { "title": "Node", "imageSrc": "../../src/images/node.png" },
+  { "title": "HTML", "imageSrc": "../../src/images/html.png" },
+  { "title": "CSS", "imageSrc": "../../src/images/css.png" },
+  { "title": "JavaScript", "imageSrc": "../../src/images/javascript.png" }
+]
