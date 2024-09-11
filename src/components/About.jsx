@@ -9,8 +9,8 @@ const About = ({ show, setShow }) => {
         <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
 
         <div className="banner">
-          <div className="content ">
-          <img src="https://www.ie.edu/insights/wp-content/uploads/2021/07/shutterstock_1913016523.jpg" alt='error' className="object-contain lg:hidden" />
+          <div className="content sm:mt-0 mt-60">
+          {/* <img src="https://www.ie.edu/insights/wp-content/uploads/2021/07/shutterstock_1913016523.jpg" alt='error' className="object-contain lg:hidden" /> */}
             <div>
               <h1>ABOUT</h1>
               <h3>ershahalam12@gmail.com</h3>
@@ -20,7 +20,7 @@ const About = ({ show, setShow }) => {
               I am Shahnawaz Alam. I have completed B.Tech in Computer Science
               and Engineering from IES Institute of Technology, Bhopal.{" "}
               <p>
-                Recently, I completed a 6-month internship where I specialized
+                Recently, I completed a 9-month internship where I specialized
                 in UI Full Stack Web Development (MERN Stack). My expertise
                 spans across HTML, CSS, Tailwind CSS, JavaScript, React.js,
                 MongoDB, Node.js, and Express.js. During this internship, I
@@ -44,6 +44,11 @@ Front-end React developer<br/>
           <div className="profileImage">
             <img src="/shah_pic.png" alt="profilImage" className="object-cover hidden lg:block" />
           </div>
+ 
+                    <div className="absolute top-0 items-center justify-center sm:hidden">
+                        <img className="w-full h-full" src="/shah_pic.png" alt="profile" />
+                    </div>
+             
         </div>
       </section>
     </>
@@ -51,3 +56,5 @@ Front-end React developer<br/>
 };
 
 export default About;
+
+

@@ -11,7 +11,7 @@ const Skills = () => {
           {skills.map((data, index) => (
             <div
               key={index}
-              className="flex flex-col items-center bg-white shadow-lg p-6 rounded-lg transform transition duration-1000 hover:scale-105"
+              className="flex flex-col items-center border border-white sm:bg-white bg-black sm:text-black text-white shadow-2xl p-6 rounded-lg transform transition duration-1000 hover:scale-105"
               data-aos="flip-left"
               data-aos-duration="1000"
             >

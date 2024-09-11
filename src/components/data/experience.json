@@ -3,26 +3,28 @@
     "id": 1,
     "role": "Naresh-iT Technology",
     "organisation": "Google",
-    "startDate": "Sept, 2023",
-    "endDate": "Present",
-    "location": "CA,United State",
+    "startDate": "01/08/2023 -",
+    "endDate": " 31/05/2023",
+    "location": "Hyderabad",
     "experiences": [
       "Worked on Google Gmail",
       "Worked with the Google Bard Team"
     ],
-    "imageSrc": "https://pbs.twimg.com/profile_images/1523555503812771841/msFf7rze_400x400.jpg"
+    "imageSrc": "https://media.licdn.com/dms/image/D5612AQF-7VneFPze7w/article-cover_image-shrink_600_2000/0/1717059256637?e=2147483647&v=beta&t=aZWSIqawTa9vgmUxCBiEz3O7CZ2aoGUdnMVLfc3nRJA",
+    "simageSrc": "https://pbs.twimg.com/profile_images/1523555503812771841/msFf7rze_400x400.jpg"
   },
   {
     "id": 2,
     "role": "CodePrism Technologies",
     "organisation": "Mirosoft",
-    "startDate": "Aug, 2022",
-    "endDate": "Aug, 2023",
-    "location": "London, UK",
+    "startDate": "01/06/2023 -",
+    "endDate": "31/08/2023",
+    "location": "Hyderabad",
     "experiences": [
       "Worked on Windows 10 terminal",
       "Worked on Window 11 Upcoming"
     ],
-    "imageSrc": "https://cdn.embed.ly/providers/logos/codeprism.png"
+    "imageSrc": "https://s3.codeprismtechnologies.com/logo_codeprism_0c393dae5a.webp",
+    "simageSrc": "https://media.licdn.com/dms/image/v2/C4D0BAQHYUkYm5pSXSw/company-logo_200_200/company-logo_200_200/0/1630580119930/codeprism_logo?e=2147483647&v=beta&t=K_jkHTxH2YOcT4gIbip1HUePeoeyY31plvFfUdq1HYs"
   }
 ]

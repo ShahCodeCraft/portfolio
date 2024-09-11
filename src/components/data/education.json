@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "role": "Matriculation (10th)",
+    "organisation": "BSEB BOARD",
+    "startDate": "2013 -",
+    "endDate": " 2015",
+    "location": "Bihar",
+    "experiences": [
+      "I completed my matriculation at my hometown, Ramjewar High School Aurai,Muzaffarpur(Bihar), building a strong academic foundation."
+
+    ],
+    "imageSrc": "https://lh3.googleusercontent.com/places/AAcXr8r5pINf9aBdWbKjSKC9TBRXmNonMjSp_jfOtGiET9IfXOLowef-s95p3JAYkieQntMxGhvjWol9AqBFfoNuiqEN1VlT9l1F0ZA=s1600-h500"
+  },
+  {
+    "id": 2,
+    "role": "Intermediate (12th)",
+    "organisation": "Mirosoft",
+    "startDate": "2015 -",
+    "endDate": "2017",
+    "location": "Bihar",
+    "experiences": [
+      "I completed my intermediate at Vanijya Inter College, Muzaffarpur, my hometown provided a solid academic foundation and a unique opportunity for personal growth."
+    ],
+    "imageSrc": "https://lh5.googleusercontent.com/p/AF1QipO5Ghvi-cgsMRlw3nQTU23Ui3uByoBDEN462g=w1080-k-no"
+  },
+  {
+    "id": 3,
+    "role": "Graduation (B.Tech)",
+    "organisation": "Mirosoft",
+    "startDate": "2017 -",
+    "endDate": "2021",
+    "location": "Bihar",
+    "experiences": [
+      "I have completed my graduation (B.Tech) from Rajiv Gandhi Proudyogiki Vishwavidyalaya (RGPV),Bhopal in 2021 with a degree in Software Engineering (CSE)"
+    ],
+    "imageSrc": "https://iesbpl.ac.in/uploads/slider/icot.jpg"
+  }
+]

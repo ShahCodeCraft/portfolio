@@ -16,11 +16,12 @@ const Resume = ({ show, setShow }) => {
         <div className="banner">
           <div className="first-column">
             <Skills />
-            <Languages />
-            <div className="personal-skills">
-              <h3>PERSONAL SKILLS</h3>
-              <p>Creativity - Team Work - Organization</p>
+            <div>
+              <h3>HOBBIES AND INTERESTS</h3>
+              <Hobbies/>
             </div>
+            <Languages />
+            
           </div>
           <div className="second-column">
             <Experience />
@@ -42,9 +43,9 @@ const Resume = ({ show, setShow }) => {
                 <span>Version Control - API Integration</span>
               </p>
             </div>
-            <div>
-              <h3>HOBBIES AND INTERESTS</h3>
-              <Hobbies/>
+            <div className="personal-skills">
+              <h3>PERSONAL SKILLS</h3>
+              <p>Creativity - Team Work - Organization</p>
             </div>
           </div>
         </div>
