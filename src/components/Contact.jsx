@@ -6,6 +6,9 @@ import { Formik, Field, Form } from "formik";
 import * as Yup from "yup";
 import CustomReCaptcha from './CustomReCaptcha';
 import { FitScreen } from "@mui/icons-material";
+import { FaInstagram, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
+import { CiFacebook, CiLinkedin } from "react-icons/ci";
+import { SiGmail } from "react-icons/si";
 
 const LineGradient = ({ width = "w-full" }) => {
   return <div className={`h-0.5 ${width} bg-gradient-to-r from-blue-400 to-blue-600`} />;
@@ -280,7 +283,60 @@ function Contact({ show, setShow }) {
         </div>
       </div>  
     
+      <div className=" mx-auto" id="contact">
+      <h1 className="text-3xl font-bold text-center mb-8">CONTACT ME</h1>
+      <div
+        className="flex justify-center space-x-6 bg-slate-50 py-2"
+        data-aos="zoom-in-up"
+        data-aos-duration="1000"
+      >
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          className="items transform hover:scale-110 transition-transform duration-300"
+        >
+          <FaInstagram className="text-4xl text-pink-500" />
+        </a>
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          className="items transform hover:scale-110 transition-transform duration-300"
+        >
+          <CiFacebook className="text-4xl text-blue-600" />
+        </a>
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          className="items transform hover:scale-110 transition-transform duration-300"
+        >
+          <CiLinkedin className="text-4xl text-blue-700" />
+        </a>
+        <a
+          href="https://www.google.com"
+          target="_blank"
+          className="items transform hover:scale-110 transition-transform duration-300"
+        >
+          <FaTwitterSquare className="text-4xl text-blue-500" />
+        </a>
+        <a
+          href="https://www.github.com"
+          target="_blank"
+          className="items transform hover:scale-110 transition-transform duration-300"
+        >
+          <FaGithubSquare className="text-4xl text-gray-800" />
+        </a>
+        <a
+          href="mailto:webdevmastery@gmail.com"
+          target="_blank"
+          className="items transform hover:scale-110 transition-transform duration-300"
+        >
+          <SiGmail className="text-4xl text-red-600" />
+        </a>
       </div>
+      </div>
+
+      </div>
+
     </section>
   );
 }

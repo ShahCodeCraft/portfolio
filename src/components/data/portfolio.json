@@ -1,0 +1,50 @@
+[
+  {
+    "key": 1,
+    "title": "E-Commerce (MERN)",
+    "imageSrc": "https://d1u4v6449fgzem.cloudfront.net/2020/03/The-Ecommerce-Business-Model-Explained.jpg",
+    "description": "A fully responsive, end-to-end e-commerce platform built with MERN Stack. Features seamless Stripe integration for secure payments experience",
+    "liveproject": "https://fullstack-ecommerce-website-shah.vercel.app",
+    "source": "https://github.com/ShahCodeCraft/MERN"
+  },
+  {
+    "key": 2,
+    "title": "Chat-App (MERN)",
+    "imageSrc": "https://cdn.shopify.com/s/files/1/0559/6246/8523/files/professionalnetworking_600x600.webp?v=1709653198",
+    "description": "A dynamic chat platform where users can connect with friends, create groups, and chat seamlessly. Includes login and registration functionality .",
+    "liveproject": "https://frontend-chat-app-omega.vercel.app",
+    "source": "https://github.com/ShahCodeCraft/Frontend_ChatApp"
+  },
+  {
+    "key": 3,
+    "title": "Personal Portfolio",
+    "imageSrc": "https://img.freepik.com/premium-photo/data-mining-project-with-team-data-miners-exploring-extracting-knowledge-from-large-set-data-created-with-generative-ai_124507-99431.jpg?w=360",
+    "description": "Here, you'll find a blend of my work and personal details, illustrating my journey and skills in creating functional and visually appealing digital experiences.",
+    "liveproject": "https://portfolio-rho-silk-77.vercel.app",
+    "source": "https://github.com/ShahCodeCraft/portfolio"
+  },
+  {
+    "key": 4,
+    "title": "Personal Portfolio",
+    "imageSrc": "https://cdn.pixabay.com/photo/2016/08/16/17/12/skyscrapers-1598418_640.jpg",
+    "description": "Here, you'll find a blend of my work and personal details, illustrating my journey and skills in creating functional and visually appealing digital experiences.",
+    "liveproject": "https://portfolio-rho-silk-77.vercel.app",
+    "source": "https://github.com/ShahCodeCraft/portfolio"
+  },
+  {
+    "key": 5,
+    "title": "Personal Portfolio",
+    "imageSrc": "https://cdn.pixabay.com/photo/2016/08/16/17/12/skyscrapers-1598418_640.jpg",
+    "description": "Here, you'll find a blend of my work and personal details, illustrating my journey and skills in creating functional and visually appealing digital experiences.",
+    "liveproject": "https://portfolio-rho-silk-77.vercel.app",
+    "source": "https://github.com/ShahCodeCraft/portfolio"
+  },
+  {
+    "key": 6,
+    "title": "Personal Portfolio",
+    "imageSrc": "https://cdn.pixabay.com/photo/2016/08/16/17/12/skyscrapers-1598418_640.jpg",
+    "description": "Here, you'll find a blend of my work and personal details, illustrating my journey and skills in creating functional and visually appealing digital experiences.",
+    "liveproject": "https://portfolio-rho-silk-77.vercel.app",
+    "source": "https://github.com/ShahCodeCraft/portfolio"
+  }
+]
