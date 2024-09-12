@@ -11,7 +11,7 @@ const Additional = () => {
           {additional.map((data, index) => (
             <div
               key={index}
-              className=" w-full h-full flex flex-col items-center border border-white bg-[#0648EF] text-[#FFFFFF] shadow-2xl sm:px-2 p-8 rounded-full sm:rounded-lg transform transition duration-1000 hover:scale-105"
+              className=" w-full h-full flex flex-col items-center border border-white sm:bg-[#0648EF] sm:text-[#FFFFFF]  bg-black text-white shadow-2xl sm:px-2 p-8 rounded-full sm:rounded-lg transform transition duration-1000 hover:scale-105"
               data-aos="flip-left"
               data-aos-duration="1000"
             > 
