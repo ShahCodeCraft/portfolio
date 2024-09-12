@@ -11,7 +11,7 @@ const Additional = () => {
           {additional.map((data, index) => (
             <div
               key={index}
-              className=" w-full h-full flex flex-col items-center border border-white sm:bg-[#0648EF] sm:text-[#FFFFFF]  bg-black text-white shadow-2xl sm:px-2 p-8 rounded-full sm:rounded-lg transform transition duration-1000 hover:scale-105"
+              className=" w-full h-full sm:h-[150px] flex flex-col items-center border border-white sm:bg-[#0648EF] sm:text-[#FFFFFF]  bg-black text-white shadow-2xl px-2 rounded-lg transform transition duration-1000 hover:scale-105"
               data-aos="flip-left"
               data-aos-duration="1000"
             > 
@@ -20,8 +20,8 @@ const Additional = () => {
                 alt={data.title}
                 className="w-16 h-16 object-contain mb-4"
               /> */}
-              <h3 className="text-xl font-semibold mt-2 sm:-mt-5">{data.title}</h3>
-              <p className="ml-5 sm:-ml-0 text-gray-300">{data.des}</p>
+              <h3 className="text-xl sm:pt-3 pt-5 font-semibold">{data.title}</h3>
+              <p className="text-gray-300 px-1 text-lg sm:pb-0 pb-3">{data.des}</p>
             </div>
           ))}
         </div>

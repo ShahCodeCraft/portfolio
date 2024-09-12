@@ -57,7 +57,7 @@ const Experience = () => {
         return (
           <div
             key={data.id}
-            className="sm:flex block justify-between items-center sm:bg-white sm:text-gray-950 bg-black text-white my-5 p-8 w-full max-w-4xl rounded-lg border border-gray-50  sm:shadow-2xl shadow-2xl transform transition duration-1000 hover:scale-105"
+            className="sm:flex block justify-between items-center sm:bg-white sm:text-gray-950 bg-black text-white my-5 p-5 w-full max-w-4xl rounded-lg border border-gray-50  sm:shadow-2xl shadow-2xl transform transition duration-1000 hover:scale-105"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
@@ -67,21 +67,24 @@ const Experience = () => {
                 alt={data.title}
                 className="w-full h-24 object-contain sm:hidden block"
               />
-              <img
-                src={data.simageSrc}
-                alt={data.title}
-                className="w-24 h-24 object-contain hidden sm:block"
-              />
             </div>
 
             <div className=" ml-3">
+              <div className="flex justify-between mb-0 sm:-mb-12">
               <h2 className="text-2xl font-semibold mb-1">{data.role}</h2>
+              <img
+                src={data.simageSrc}
+                alt={data.title}
+                className="w-24 h-24  object-contain hidden sm:block"
+              />
+              </div> 
+
               <h4 className="text-lg mb-1">
                 <span className="sm:text-gray-600 text-gray-400">{data.startDate} {data.endDate}</span>
                 <span className="sm:text-gray-600 text-gray-400 ml-5">{data.location}</span>
               </h4>
               {data.experiences.map((exp, index) => (
-                <h5 key={index} className="sm:text-gray-900 text-gray-100 mb-1">{exp}</h5>
+                <h5 key={index} className="sm:text-gray-900 text-gray-100 ">{exp}</h5>
               ))}
             </div>
           </div>

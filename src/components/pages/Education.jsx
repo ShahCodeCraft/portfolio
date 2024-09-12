@@ -57,7 +57,7 @@ const Education = () => {
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <div className="">
+            <div className="py-4">
               <img
                 src={data.imageSrc}
                 alt={data.title}

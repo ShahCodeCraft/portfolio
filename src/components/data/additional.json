@@ -1,5 +1,5 @@
 [
-  { "title": "WHAT CAN I DO", "imageSrc": "src/images/mongodb.png", "des":"Web Development - MERN Stack Development Website Optimization - Problem Solving Code Debugging - Project Management"},
-  { "title": "EXPERTIES", "imageSrc": "src/images/react.png","des":"Web Development - MERN Stack Development Website Optimization - Problem Solving Code Debugging - Project Management"},
-  { "title": "TEAM ORIENTED", "imageSrc": "src/images/node.png", "des":"Creativity - Team Work - Organization Creativity - Team Work - Organization Creativity - Team Work - Organization"}
+  { "title": "WHAT CAN I DO", "imageSrc": "src/images/mongodb.png", "des":"I can design and develop responsive web applications using the MERN stack, optimize user interfaces for performance, and implement secure backend systems with MongoDB"},
+  { "title": "EXPERTIES", "imageSrc": "src/images/react.png","des":"Proficient in HTML, CSS, JavaScript, React.js, Node.js, Express, MongoDB, Tailwind, and Git. Skilled in creating user-friendly interfaces and integrating third-party APIs"},
+  { "title": "TEAM ORIENTED", "imageSrc": "src/images/node.png", "des":"Collaborative team player with experience in Agile environments. Capable of working efficiently with cross-functional teams to deliver high-quality projects on time"}
 ]
