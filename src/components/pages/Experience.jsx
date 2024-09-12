@@ -57,7 +57,7 @@ const Experience = () => {
         return (
           <div
             key={data.id}
-            className="sm:flex block justify-between items-center sm:bg-white sm:text-gray-950 bg-black text-white my-5 p-8 w-full max-w-4xl rounded-lg border border-gray-50  sm:shadow-2xl shadow-2xl   transform transition duration-1000 hover:scale-105"
+            className="sm:flex block justify-between items-center sm:bg-white sm:text-gray-950 bg-black text-white my-5 p-8 w-full max-w-4xl rounded-lg border border-gray-50  sm:shadow-2xl shadow-2xl transform transition duration-1000 hover:scale-105"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >

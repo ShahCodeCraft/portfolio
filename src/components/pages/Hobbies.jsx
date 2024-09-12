@@ -7,33 +7,40 @@ import { MdSportsBaseball, MdSportsCricket } from "react-icons/md";
 const Hobbies = () => {
   return <>
 
+   <div>
+    <h3>HOBBIES AND INTERESTS</h3>
+    </div>
     <div className="hobbies">
-      <span>
-        <div>
-          <SiEpicgames/>
+    
+    <div className="sm:flex block">
+    <span>
+        <div className="bg-[#0648EF] rounded-lg w-[100px]">
+          <SiEpicgames />
           GAMING
         </div>
-        <div>
+        <div className="bg-[#0648EF] rounded-lg w-[100px]">
           {/* <AiFillCamera/> */}
           {/* PHOTOGRAPHY */}
 
           <AiFillBook/>
-          READING BOOKS
+          READING
 
         </div>
       </span>
       <span>
-        <div>
+      <div className="bg-[#E91E63] rounded-lg w-[100px]">
           <BiSolidPlaneAlt/>
           TRAVELLING
         </div>
-        <div>
+        <div className="bg-[#E91E63] rounded-lg w-[100px]">
           {/* <MdSportsBaseball/> */}
           <MdSportsCricket/>
           SPORTS
         </div>
       </span>
+
     </div>
+   </div>
   
   </>;
 };

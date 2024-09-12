@@ -6,6 +6,7 @@ import Languages from "./pages/Languages";
 import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Hobbies from "./pages/Hobbies";
+import Additional from "./pages/Additional";
 
 const Resume = ({ show, setShow }) => {
   return (
@@ -16,18 +17,16 @@ const Resume = ({ show, setShow }) => {
         <div className="banner">
           <div className="first-column">
             <Skills />
-            <div>
-              <h3>HOBBIES AND INTERESTS</h3>
-              <Hobbies/>
-            </div>
-            <Languages />
-            
+            <Education />
+         
           </div>
           <div className="second-column">
             <Experience />
-            <Education />
+            <Additional/>
+            <Hobbies/>
           </div>
-          <div className="third-column">
+            {/* <Languages /> */}
+          {/* <div className="third-column">
             <div>
               <h3>WHAT CAN I DO</h3>
               <p>
@@ -47,7 +46,7 @@ const Resume = ({ show, setShow }) => {
               <h3>PERSONAL SKILLS</h3>
               <p>Creativity - Team Work - Organization</p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

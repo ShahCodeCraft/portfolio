@@ -42,18 +42,18 @@
 // export default Education;
 
 import React from "react";
-import experience from "../data/education.json";
+import education from "../data/education.json";
 
 const Education = () => {
   return (
 
     <div className="container mx-auto px-4 py-12" id="experience">
       <h1 className="text-4xl font-bold text-center text-gray-50 mb-8">EDUCATION</h1>
-      {experience.map((data) => {
+      {education.map((data) => {
         return (
           <div
             key={data.id}
-            className="sm:flex block justify-between items-center sm:bg-white sm:text-gray-950 bg-black text-white my-5 p-8 w-full max-w-4xl rounded-lg border border-gray-50  sm:shadow-2xl shadow-2xl   transform transition duration-1000 hover:scale-105"
+            className="sm:flex block justify-between items-center sm:bg-[#E91E63] sm:text-[#F5F5DC] bg-black text-white my-5 p-8 w-full max-w-4xl rounded-lg border border-gray-50  sm:shadow-2xl shadow-2xl   transform transition duration-1000 hover:scale-105"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
@@ -73,11 +73,11 @@ const Education = () => {
             <div className=" ml-3">
               <h2 className="text-2xl font-semibold mb-1">{data.role}</h2>
               <h4 className="text-lg mb-1">
-                <span className="sm:text-gray-600 text-gray-400">{data.startDate} {data.endDate}</span>
-                <span className="sm:text-gray-600 text-gray-400 ml-5">{data.location}</span>
+                <span className="sm:text-[#F9E795] text-gray-400">{data.startDate} {data.endDate}</span>
+                <span className="sm:text-[#F9E795] text-gray-400 ml-5">{data.location}</span>
               </h4>
               {data.experiences.map((exp, index) => (
-                <h5 key={index} className="sm:text-gray-900 text-gray-100 mb-1">{exp}</h5>
+                <h5 key={index} className="sm:text-gray-200 text-gray-100 mb-1">{exp}</h5>
               ))}
             </div>
           </div>

@@ -20,7 +20,7 @@ const Languages = () => {
     },
   ]
   return (
-    <div style={{marginTop: "2rem"}}>
+    <div>
         <h3>LANGUAGES</h3>
         {languages.map((element) => {
           return (
