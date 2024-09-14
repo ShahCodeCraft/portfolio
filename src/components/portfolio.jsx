@@ -145,7 +145,7 @@ const Portfolio = ({ show, setShow }) => {
           {project.map((data) => (
             <div
               key={data.id}
-              className="my-4 mx-4 sm:w-1/2 md:w-1/3 lg:w-1/4"
+              className="my-4 mx-4 sm:w-1/2 md:w-1/3 lg:w-1/4 transform transition duration-1000 hover:scale-105"
             >
               <div
                 className="bg-gray-800 text-white rounded-lg overflow-hidden"
