@@ -10,6 +10,7 @@ import Contact from "./components/Contact";
 import { useState } from "react";
 import SimpleForm from "./ChatbotPage/ChatbotTest/ChatbotTest";
 import { steps } from "./ChatbotPage/chatSteps";
+import EbookStore from "./components/ebook";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -36,6 +37,10 @@ function App() {
           <Route
             path={"/contact"}
             element={<Contact show={show} setShow={setShow} />}
+          />
+          <Route
+            path={"/ebook"}
+            element={<EbookStore show={show} setShow={setShow} />}
           />
         </Routes>
       </Router>

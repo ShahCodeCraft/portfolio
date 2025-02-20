@@ -13,7 +13,7 @@
   padding: 20px 4rem;
   justify-content: space-between;
   align-items: center;
-  background: #11111145;
+  background: #fff;
   overflow-y: hidden;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .nav ul a {
-  color: #fff;
+  color: #000;
   font-size: 1.3rem;
   text-decoration: none;
   margin-right: 40px;
@@ -67,6 +67,9 @@
 .hamburger {
   display: none;
 }
+.hamburger2 {
+  display: none;
+}
 
 @media (max-width: 767px) {
   .nav {
@@ -80,6 +83,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     background: #080808e8;
+    
     transition: left 0.5s;
     z-index: 1;
   }
@@ -94,16 +98,26 @@
     padding: 15px 0;
     margin-right: 0;
     width: fit-content;
+    color: #fff;
   }
 
   .hamburger {
-    display: block;
+    display: block;  
     position: fixed;
     right: 4%;
     top: 4%;
     font-size: 2rem;
     z-index: 10;
     color: #fff;
+  }
+  .hamburger2 {
+    display: block;
+    position: fixed;
+    right: 4%;
+    top: 4%;
+    font-size: 2rem;
+    z-index: 10;
+    color: #000;
   }
 
   .mobile-nav {

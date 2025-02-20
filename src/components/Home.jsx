@@ -9,6 +9,8 @@ import {
 } from "react-icons/ai";
 import { FaGithubSquare, FaYoutube, FaWhatsapp } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
+import MobNav from "./pages/MobNav";
+
 
 // Data configuration
 const socialLinks = [
@@ -46,16 +48,18 @@ const Home = ({ show, setShow }) => {
   return (
     <section className="page homePage">
       <Navbar show={show} />
-      <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
+      <MobNav show={show}/>
+      <TbGridDots onClick={() => setShow(!show)} className="hamburger hamburger2" />
       <div className="banner">
         <h1>SHAHNAWAZ</h1>
         <h1>ALAM</h1>
         <p>Web Developer <br/>(MERN STACK)</p>
         <div className="btns">
-          <Link to="./Shah-Exp-Res.pdf" target="_blank">
+          {/* <Link to="./Shah-Exp-Res.pdf" target="_blank">
             Resume
-          </Link>
-          <Link to="/portfolio">Portfolio</Link>
+          </Link> */}
+          <Link to="/portfolio">PROJECTS</Link>
+          <Link to="/ebook">eBOOK</Link>
         </div>
       </div>
       <footer>
