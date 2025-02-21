@@ -6,7 +6,7 @@ const Navbar = ({ show }) => {
   return (
     <>
       <nav className={show ? "nav mobile-nav" : "nav"}>
-        <img className="w-[200px] hidden md:flex" src="./src/assets/ShahAlam.png" />
+        <img className="w-[200px] hidden md:flex" src="/ShahAlam.png" />
         <div className="phone">
           <ul>
           <Link to={"/"}>Home</Link>
