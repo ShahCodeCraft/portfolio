@@ -7,12 +7,15 @@ import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import Hobbies from "./pages/Hobbies";
 import Additional from "./pages/Additional";
+import MobNav from "./pages/MobNav";
 
 const Resume = ({ show, setShow }) => {
   return (
     <>
+    <div>
+    <MobNav show={show} />
+    <Navbar show={show} />
       <section className="page resumePage">
-        <Navbar show={show} />
         <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
         <div className="banner">
           <div className="first-column">
@@ -49,6 +52,7 @@ const Resume = ({ show, setShow }) => {
           </div> */}
         </div>
       </section>
+      </div>
     </>
   );
 };

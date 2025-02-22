@@ -9,6 +9,7 @@ import { FitScreen } from "@mui/icons-material";
 import { FaInstagram, FaTwitterSquare, FaGithubSquare } from "react-icons/fa";
 import { CiFacebook, CiLinkedin } from "react-icons/ci";
 import { SiGmail } from "react-icons/si";
+import MobNav from "./pages/MobNav";
 
 const LineGradient = ({ width = "w-full" }) => {
   return <div className={`h-0.5 ${width} bg-gradient-to-r from-blue-400 to-blue-600`} />;
@@ -60,8 +61,10 @@ function Contact({ show, setShow }) {
   };
 
   return (
-    <section className="page contactPage">
+    <div>
+      <MobNav show={show} />
       <Navbar show={show} />
+    <section className="page contactPage">
       <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
       <div className="relative isolate bg-[#2D384A] sm:px-6 lg:py-10 sm:py-10 lg:px-8">
       <div>
@@ -267,7 +270,7 @@ function Contact({ show, setShow }) {
 
               </div>
               
-              <div className="mt-10">
+              <div className="">
                 <button
                   type="submit"
                   className="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 disabled:opacity-50"
@@ -284,7 +287,7 @@ function Contact({ show, setShow }) {
       </div>  
     
       <div className=" mx-auto" id="contact">
-      <h1 className="text-3xl font-bold text-center mb-8">CONTACT ME</h1>
+      <h1 className="text-3xl font-bold text-center mb-6 mt-8">CONTACT ME</h1>
       <div
         className="flex justify-center space-x-6 bg-slate-50 py-2"
         data-aos="zoom-in-up"
@@ -338,6 +341,7 @@ function Contact({ show, setShow }) {
       </div>
 
     </section>
+    </div>
   );
 }
 

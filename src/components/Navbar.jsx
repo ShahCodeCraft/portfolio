@@ -6,7 +6,7 @@ const Navbar = ({ show }) => {
   return (
     <>
       <nav className={show ? "nav mobile-nav" : "nav"}>
-        <img className="w-[200px] hidden md:flex" src="/ShahAlam.png" />
+      <Link to={"/"}><img className="w-[200px] hidden md:flex" src="/ShahAlam.png" /></Link>
         <div className="phone">
           <ul>
           <Link to={"/"}>Home</Link>
@@ -14,9 +14,10 @@ const Navbar = ({ show }) => {
           <Link to={"/resume"}>Resume</Link>
           <Link to={"/portfolio"}>Portfolio</Link>
           <Link to={"/contact"}>Contact</Link>
+          <span className="flex sm:text-black"><CiMobile3 className="mt-1"/>+917903561228</span>
         </ul>
-          <CiMobile3 className="hidden md:flex text-black"  />
-          <span className="hidden md:flex text-black" >+917903561228</span>
+          {/* <CiMobile3 className=""  />
+          <span className="" >+917903561228</span> */}
         </div>
       </nav>
     </>

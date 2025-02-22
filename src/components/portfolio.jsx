@@ -132,12 +132,15 @@ import Navbar from "./Navbar";
 import { TbGridDots } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import project from "./data/portfolio.json";
+import MobNav from "./pages/MobNav";
 
 const Portfolio = ({ show, setShow }) => {
   return (
     <>
+  <div>
+     <MobNav show={show} />
+     <Navbar show={show} />
     <section className="page contactPage">
-      <Navbar show={show} />
       <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
       <div className="mx-auto bg-gray-700 w-full h-full py-6">
         <h1 className="text-center text-4xl font-bold mb-5 text-gray-100 pt-5">LIVE PROJECTS</h1>
@@ -193,6 +196,7 @@ const Portfolio = ({ show, setShow }) => {
         </div>
       </div>
       </section>
+      </div>
     </>
   );
 };

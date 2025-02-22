@@ -1,11 +1,16 @@
 import React from "react";
 import Navbar from "./Navbar";
 import { TbGridDots } from "react-icons/tb";
+import MobNav from "./pages/MobNav";
 const About = ({ show, setShow }) => {
   return (
     <>
+    <div>
+    <MobNav show={show} />
+    <Navbar show={show} />
+    
       <section className="page aboutPage">
-        <Navbar show={show} />
+        
         <TbGridDots onClick={() => setShow(!show)} className="hamburger" />
 
         <div className="banner">
@@ -51,6 +56,7 @@ Front-end React developer<br/>
              
         </div>
       </section>
+      </div>
     </>
   );
 };

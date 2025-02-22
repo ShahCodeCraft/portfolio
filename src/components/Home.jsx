@@ -72,7 +72,7 @@ const Home = ({ show, setShow }) => {
         </ul>
         <a
           className="download-btn"
-          href="./Shah-Exp-Res.pdf"
+          href="./ShahRes.pdf"
           download="Shah-Resume.pdf"
         >
           [Download CV]
