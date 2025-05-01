@@ -59,7 +59,9 @@ const Home = ({ show, setShow }) => {
             Resume
           </Link> */}
           <Link to="/portfolio">PROJECTS</Link>
-          <Link to="/ebook">eBOOK</Link>
+          <Link to="/ebooks">eBOOK</Link>
+          {/* <Link to="/ebook">eBOOK</Link> */}
+
         </div>
       </div>
       <footer>
